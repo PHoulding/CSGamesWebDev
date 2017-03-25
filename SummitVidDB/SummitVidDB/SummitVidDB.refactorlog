@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="ab59c648-3806-4dcf-9859-784a06ee59c7" ChangeDateTime="03/25/2017 23:28:10">
+    <Property Name="ElementName" Value="[dbo].[users_T].[password]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[users_T]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="password_hash" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d0f8b9ec-f21e-4085-9aa7-e0534c5aa6f5" ChangeDateTime="03/25/2017 23:40:08">
+    <Property Name="ElementName" Value="[dbo].[user_profile_t].[Picture]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[user_profile_t]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="picture_location" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5b499c2a-272a-4b0c-9e8d-815f07386152" ChangeDateTime="03/25/2017 23:42:45">
+    <Property Name="ElementName" Value="[dbo].[video_t].[Duration]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[video_t]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Duration_seconds" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a6c7b6a8-8e6f-4975-b7dd-1403e1828e7d" ChangeDateTime="03/25/2017 23:44:35">
+    <Property Name="ElementName" Value="[dbo].[video_t].[likes]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[video_t]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="likes_count" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2e93d56a-6213-4242-9083-41b6dc0de95d" ChangeDateTime="03/25/2017 23:49:02">
+    <Property Name="ElementName" Value="[dbo].[comments_t].[User_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[comments_t]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Author_Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="519776a1-2fa3-42b8-ba7d-47eb4f7bb02b" ChangeDateTime="03/25/2017 23:49:40">
+    <Property Name="ElementName" Value="[dbo].[comments_t].[time_frame]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[comments_t]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="frame_seconds" />
+  </Operation>
+</Operations>
