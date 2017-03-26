@@ -9,7 +9,7 @@ index key, rounded up to the nearest power of two.
 
 CREATE TABLE [dbo].[video_t]
 (
-	[Id] INT NOT NULL PRIMARY KEY NONCLUSTERED HASH WITH (BUCKET_COUNT = 131072), 
+	[Id] INT NOT NULL PRIMARY KEY, --NONCLUSTERED HASH WITH (BUCKET_COUNT = 131072), 
     [User_Id] INT NOT NULL, 
     [Title] NVARCHAR(50) NOT NULL, 
     [Description] NVARCHAR(MAX) NULL, 
@@ -21,4 +21,4 @@ CREATE TABLE [dbo].[video_t]
     [likes_count] INT NOT NULL DEFAULT 0, 
     [dislikes_count] INT NOT NULL DEFAULT 0,
 	CONSTRAINT [FK_Users_Videos] FOREIGN KEY ([User_Id]) REFERENCES [dbo].[users_t]([Id]), 
-) WITH (MEMORY_OPTIMIZED = ON)
+) --WITH (MEMORY_OPTIMIZED = ON)
