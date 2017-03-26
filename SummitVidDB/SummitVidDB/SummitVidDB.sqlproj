@@ -57,17 +57,23 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="StoredProcedures" />
+    <Folder Include="Tables" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="users_t.sql" />
-    <Build Include="user_profile_t.sql" />
-    <Build Include="video_t.sql" />
-    <Build Include="watch_history_t.sql" />
-    <Build Include="comments_t.sql" />
-    <Build Include="tags_t.sql" />
-    <Build Include="video_tags_t.sql" />
+    <Build Include="StoredProcedures\addUser.sql" />
+    <Build Include="Tables\comments_t.sql" />
+    <Build Include="Tables\tags_t.sql" />
+    <Build Include="Tables\user_profile_t.sql" />
+    <Build Include="Tables\users_t.sql" />
+    <Build Include="StoredProcedures\login.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="SummitVidDB.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\video_t.sql" />
+    <Build Include="Tables\video_tags_t.sql" />
+    <Build Include="Tables\watch_history_t.sql" />
   </ItemGroup>
 </Project>

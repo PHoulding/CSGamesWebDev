@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using System.Web.Http;
 
 // For more information on enabling Web API for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -12,6 +11,9 @@ namespace ServerAPI
     [Route("api/[controller]")]
     public class UserController : Controller
     {
+        const string ADD_USER_PROC = "addUser";
+        const string LOGIN_PROC = "login";
+
         // GET: api/user
         [HttpGet]
         public IEnumerable<string> Get()
@@ -22,6 +24,12 @@ namespace ServerAPI
         // GET api/user/5
         [HttpGet("{id}")]
         public string Get(int id)
+        {
+            return "value";
+        }
+
+        [HttpGet("{username}"), HttpGet("{password}")]
+        public string Get(string username, string password)
         {
             return "value";
         }
