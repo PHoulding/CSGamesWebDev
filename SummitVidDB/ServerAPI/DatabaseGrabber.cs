@@ -7,6 +7,8 @@ namespace ServerAPI
 {
     public class DatabaseGrabber
     {
+        //DATABASE INFORMATION
+
 
     }
 }
