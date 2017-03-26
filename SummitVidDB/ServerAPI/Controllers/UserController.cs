@@ -11,9 +11,6 @@ namespace ServerAPI
     [Route("api/[controller]")]
     public class UserController : Controller
     {
-        const string ADD_USER_PROC = "addUser";
-        const string LOGIN_PROC = "login";
-
         // GET: api/user
         [HttpGet]
         public IEnumerable<string> Get()
@@ -29,9 +26,9 @@ namespace ServerAPI
         }
 
         [HttpGet("{username}"), HttpGet("{password}")]
-        public string Get(string username, string password)
+        public int Get(string username, string password)
         {
-            return "value";
+            return DatabaseGrabber.loginUser(username, password);
         }
 
         // POST api/user
